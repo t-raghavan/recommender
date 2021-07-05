@@ -133,7 +133,7 @@ def similar_prods(prod_name):
     input_prod_index = similar_prods[similar_prods['product_name'] == prod_name].index
     similar_prods.drop(index=input_prod_index,inplace=True)
     
-    similar_prods = similar_prods[['product_name','Rprice']].head(10).reset_index(drop=True)
+    similar_prods = similar_prods[['product_name','price']].head(10).reset_index(drop=True)
     
     #print(similar_prods)
     
